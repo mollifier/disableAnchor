@@ -5,8 +5,9 @@
     onReady: function(widget) {
       $(widget).click(function() {
         $(jetpack.tabs.focused.contentDocument).
-          find("a").
-          css({ backgroundColor:"blue" });
+          find("a").each(function() {
+            $(this).replaceWith("<span>" + $(this).text() + "</span>");
+          });
       });
     }
   });
