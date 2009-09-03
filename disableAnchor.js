@@ -1,6 +1,6 @@
 (function() {
   jetpack.statusBar.append({
-    html: "disableA",
+    html: "disA",
     width: 60,
     onReady: function(widget) {
       $(widget).click(function() {
