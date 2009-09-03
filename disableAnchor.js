@@ -6,7 +6,7 @@
       $(widget).click(function() {
         $(jetpack.tabs.focused.contentDocument).
           find("a").each(function() {
-            $(this).replaceWith($(this).text());
+            $(this).replaceWith($(this).html());
           });
       });
     }
